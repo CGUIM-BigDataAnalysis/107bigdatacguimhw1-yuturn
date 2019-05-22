@@ -1,0 +1,8 @@
+"0","females <- rbind(FM103=c(""2014"","""","""","""","""","""","""","""","""","""","""","""","""",""""),
+                 FM104=head(X104ED2[X104ED2$`大學-女/男`>100,]),
+                 FM105=head(X105ED2[X105ED2$`大學-女/男`>100,]),
+                 FM106=head(X106ED2[X106ED2$`大學-女/男`>100,]))
+knitr::kable(table(females))
+"
+"2","Error in table(females) : attempt to make a table with >= 2^31 elements
+"

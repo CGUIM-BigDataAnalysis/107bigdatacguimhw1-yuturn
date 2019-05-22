@@ -1,0 +1,23 @@
+"0","X103ED2<-na.omit(X103ED)
+X104ED2<-na.omit(X104ED)
+X105ED2<-na.omit(X105ED)
+X106ED2<-na.omit(X106ED)
+
+X103ED2$`大學-女/男`<-as.numeric(X103ED2$`大學-女/男`)
+X104ED2$`大學-女/男`<-as.numeric(X104ED2$`大學-女/男`)
+X105ED2$`大學-女/男`<-as.numeric(X105ED2$`大學-女/男`)
+X106ED2$`大學-女/男`<-as.numeric(X106ED2$`大學-女/男`)
+X103ED2<- arrange(X103ED2,`大學-女/男`)
+X104ED2<- arrange(X104ED2,`大學-女/男`)
+X105ED2<- arrange(X105ED2,`大學-女/男`)
+X106ED2<- arrange(X106ED2,`大學-女/男`)
+TOP10 <- data.frame(TOP103=head(X103ED2$大職業別,10),
+                    TOP104=head(X104ED2$大職業別,10),
+                    TOP105=head(X105ED2$大職業別,10),
+                    TOP106=head(X106ED2$大職業別,10))
+knitr::kable(table(TOP10))
+"
+"0","X103ED2<-na.omit(X103ED2)"
+"0","X104ED2<-na.omit(X104ED2)"
+"0","X105ED2<-na.omit(X105ED2)"
+"0","X106ED2<-na.omit(X106ED2)"
